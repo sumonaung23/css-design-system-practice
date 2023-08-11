@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;800&family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+
+    <!-- Our custom Css -->
+
+    <link rel="stylesheet" href="index.css">
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="home">
+    
+    <a class="skip-to-main-content sr-only" href="#main">Skip to main content</a>
+    
+    <header class="primary-header flex">
+        <div>
+            <img src="shared/logo.svg" alt="space tourism logo" class="logo">
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+        <!-- ?my::before is here -->
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+                <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span> Home</a></li>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span> Destination</a></li>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">02</span> crew</a></li>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span aria-hidden="true">03</span> Technology</a></li>
+            </ul>
+        </nav>
+        <!--? my::after is here -->
+    </header>
+
+    <main id="main" class="grid-container grid-container--home"> <!--(--) = modifying -->
+        <div>
+            <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel to <span class="d-block fs-900 ff-serif">Space</span></h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique sed dolorum porro quia. Amet aperiam delectus iste, nostrum cum fugit minima aliquam esse quae iure.</p>
+        </div>
+          
+        <div>
+            <a href="#" class="large-button uppercase ff-serif fs-600 text-dark bg-white">Explore</a>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
